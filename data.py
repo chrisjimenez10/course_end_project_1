@@ -1,6 +1,5 @@
 # Customer Names
 customer_names: list[str] = ["Alex Quiroz", "Chris Jimenez", "Wendy Barajaz", "Ashi Gupta", "Nataly Jimenez", "Luis Ortiz", "Guillermo Ochoa", "Cristiano Ronaldo", "Gloria Jimenez", "Alejandro Jimenez"]
-
 # Products
 products: dict[str, dict[str, float]] = {
     "electronics": {
@@ -20,7 +19,6 @@ products: dict[str, dict[str, float]] = {
         "couch": 157.99,
     }
 }
-
 # Total Orders -> We will use this to map out/increment product count and perform dictionary lookup to display which products were bought and quantity = Easier for inventory management
 total_orders: dict[str, dict[str, float]] = {
     "electronics": {
@@ -40,7 +38,6 @@ total_orders: dict[str, dict[str, float]] = {
         "couch": 0,
     }
 }
-
 # Rank Values - Using a dictionary for faster lookup time to determine customer rank value
 rank_value: dict[int, str] = {
     3: "high-value buyer",
@@ -55,9 +52,7 @@ revenue_categories: dict[str, float] = {
     "clothing": 0,
     "home essentials": 0
 }
-
 # Categories -> set data structure of unique categories
 unique_categories = set(list(products.keys()))
-
 if __name__ == "__main__":
     print(unique_categories)
